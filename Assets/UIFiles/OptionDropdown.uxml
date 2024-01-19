@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center;">
+        <ui:Label tabindex="-1" text="Option" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" style="-unity-font: url(&apos;project://database/Assets/Fonts/Menus.ttf?fileID=12800000&amp;guid=0d91d22a864a5d349bbf1545ab4812bd&amp;type=3#Menus&apos;); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/Menus.asset?fileID=11400000&amp;guid=20685227d71db294091d96d9d775b898&amp;type=2#Menus&apos;); -unity-font-style: bold;" />
+        <ui:Image style="--unity-image: url(&apos;project://database/Assets/Visuals/Icons/Dropdown.png?fileID=21300000&amp;guid=9f4ba0751ece8574daf17711fc3ab9ab&amp;type=3#Dropdown&apos;); height: 23px; width: 23px;" />
+    </ui:VisualElement>
+</ui:UXML>

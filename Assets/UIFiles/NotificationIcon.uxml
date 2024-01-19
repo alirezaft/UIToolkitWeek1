@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="Notification" src="project://database/Assets/UIFiles/Notification.uxml?fileID=9197481963319205126&amp;guid=d76953ec0be5d374cb7476526232ce03&amp;type=3#Notification" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Visuals/Icons/Profile.png?fileID=2800000&amp;guid=dc4ff951002b968409ba1fa8e8773838&amp;type=3#Profile&apos;); -unity-background-scale-mode: scale-to-fit;">
+        <ui:Instance template="Notification" name="Notification" style="width: 30%; height: 30%; align-self: flex-start;" />
+    </ui:VisualElement>
+</ui:UXML>

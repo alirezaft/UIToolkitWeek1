@@ -1,0 +1,23 @@
+#Header {
+    flex-direction: row;
+    height: 3%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#Dropdowns {
+    flex-direction: row;
+    width: 10%;
+    height: auto;
+    align-self: center;
+    justify-content: space-around;
+}
+
+#Title {
+    justify-content: center;
+}
+
+#Icons {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
