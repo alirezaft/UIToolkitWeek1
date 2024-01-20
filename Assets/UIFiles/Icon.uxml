@@ -1,3 +1,3 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-   <ui:Image style="--unity-image: url('project://database/Assets/Visuals/Icons/Profile.png');"/>
+    <ui:VisualElement contentContainer="true" name="icon" class="Icon" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Visuals/Icons/Profile.png?fileID=2800000&amp;guid=dc4ff951002b968409ba1fa8e8773838&amp;type=3#Profile&apos;); -unity-background-scale-mode: scale-to-fit; width: 19px; height: 19px;" />
 </ui:UXML>

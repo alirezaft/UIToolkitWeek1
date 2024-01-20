@@ -1,0 +1,75 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="OptionDropdown" src="project://database/Assets/UIFiles/OptionDropdown.uxml?fileID=9197481963319205126&amp;guid=d0ef76ef1c1dfe0418e544df4f0c240a&amp;type=3#OptionDropdown" />
+    <Style src="project://database/Assets/UIFiles/Style.uss?fileID=7433441132597879392&amp;guid=108077bf63d09ab428300cc96e1c3045&amp;type=3#Style" />
+    <ui:VisualElement name="Header" style="height: 9%;">
+        <ui:VisualElement name="Dropdowns" style="flex-grow: 1;">
+            <ui:Instance template="OptionDropdown">
+                <AttributeOverrides element-name="Label" text="HOME" />
+                <AttributeOverrides element-name="Name" text="HOME" />
+            </ui:Instance>
+            <ui:Instance template="OptionDropdown">
+                <AttributeOverrides element-name="Label" text="SHOP" />
+                <AttributeOverrides element-name="Name" text="SHOP" />
+            </ui:Instance>
+            <ui:Instance template="OptionDropdown">
+                <AttributeOverrides element-name="Label" text="PRODUCT" />
+                <AttributeOverrides element-name="Name" text="PRODUCT" />
+            </ui:Instance>
+            <ui:Instance template="OptionDropdown">
+                <AttributeOverrides element-name="Label" text="TEMPLATES" />
+                <AttributeOverrides element-name="Name" text="TEMPLATES" />
+            </ui:Instance>
+            <ui:Instance template="OptionDropdown">
+                <AttributeOverrides element-name="Label" binding-path="PAGES" />
+                <AttributeOverrides element-name="Name" text="PAGES" />
+            </ui:Instance>
+            <ui:Instance template="OptionDropdown">
+                <AttributeOverrides element-name="Label" text="MEGA" />
+                <AttributeOverrides element-name="Name" text="MEGA" />
+            </ui:Instance>
+        </ui:VisualElement>
+        <ui:VisualElement name="Title" style="flex-grow: 1;">
+            <ui:Label text="ZANK" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold; font-size: 20px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Icons" style="flex-grow: 1;">
+            <ui:VisualElement class="icon" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/HamburgerMenu.png?fileID=2800000&amp;guid=2673e484dea334f46a01b7467167b5bd&amp;type=3#HamburgerMenu&apos;); flex-direction: column; -unity-background-scale-mode: scale-to-fit; margin-left: 18px;" />
+            <ui:VisualElement name="VisualElement" class="icon" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/Profile.png?fileID=2800000&amp;guid=dc4ff951002b968409ba1fa8e8773838&amp;type=3#Profile&apos;); flex-direction: column;" />
+            <ui:VisualElement name="NotificationIcon" style="height: 20px; width: 20px;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Visuals/Icons/Sync.png?fileID=2800000&amp;guid=e4f9f37323c38a3439892dea928767a7&amp;type=3#Sync&apos;); -unity-background-scale-mode: scale-to-fit; width: 32px; height: 32px;">
+                    <ui:VisualElement name="Notification" style="width: 14px; height: 14px; align-self: flex-start; flex-direction: column;">
+                        <ui:VisualElement style="flex-grow: 1;">
+                            <ui:Image style="--unity-image: url(&apos;project://database/Assets/Visuals/Icons/Notification.png?fileID=21300000&amp;guid=32514174e827e82469ed34377dd2e18a&amp;type=3#Notification&apos;); width: 100%; height: 100%; justify-content: center; align-items: center;">
+                                <ui:Label tabindex="-1" text="9+" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&apos;project://database/Assets/Fonts/Menus.ttf?fileID=12800000&amp;guid=0d91d22a864a5d349bbf1545ab4812bd&amp;type=3#Menus&apos;); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/Menus.asset?fileID=11400000&amp;guid=20685227d71db294091d96d9d775b898&amp;type=2#Menus&apos;); -unity-font-style: bold; width: auto; height: auto; -unity-text-align: middle-center; align-items: center; justify-content: flex-start; align-self: center; font-size: 7%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                            </ui:Image>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="NotificationIcon" style="height: 20px; width: 20px;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Visuals/Icons/Favorites.png?fileID=2800000&amp;guid=3ed5c07ce6c88cf479a6c6849ccea0d1&amp;type=3#Favorites&apos;); -unity-background-scale-mode: scale-to-fit; width: 32px; height: 32px;">
+                    <ui:VisualElement name="Notification" style="width: 14px; height: 14px; align-self: flex-start; flex-direction: column;">
+                        <ui:VisualElement style="flex-grow: 1;">
+                            <ui:Image style="--unity-image: url(&apos;project://database/Assets/Visuals/Icons/Notification.png?fileID=21300000&amp;guid=32514174e827e82469ed34377dd2e18a&amp;type=3#Notification&apos;); width: 100%; height: 100%; justify-content: center; align-items: center;">
+                                <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&apos;project://database/Assets/Fonts/Menus.ttf?fileID=12800000&amp;guid=0d91d22a864a5d349bbf1545ab4812bd&amp;type=3#Menus&apos;); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/Menus.asset?fileID=11400000&amp;guid=20685227d71db294091d96d9d775b898&amp;type=2#Menus&apos;); -unity-font-style: bold; width: auto; height: auto; -unity-text-align: middle-center; align-items: center; justify-content: flex-start; align-self: center; font-size: 7%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                            </ui:Image>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="NotificationIcon" style="height: 20px; width: 20px; margin-left: 0;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Visuals/Icons/Shopping.png?fileID=2800000&amp;guid=7c0128baec6c47440ae59a9c829c8c84&amp;type=3#Shopping&apos;); -unity-background-scale-mode: scale-to-fit; width: 32px; height: 32px;">
+                    <ui:VisualElement name="Notification" style="width: 14px; height: 14px; align-self: flex-start; flex-direction: column;">
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+                            <ui:Image style="--unity-image: url(&apos;project://database/Assets/Visuals/Icons/Notification.png?fileID=21300000&amp;guid=32514174e827e82469ed34377dd2e18a&amp;type=3#Notification&apos;); width: 100%; height: 100%; justify-content: center; align-items: center;">
+                                <ui:Label tabindex="-1" text="3" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&apos;project://database/Assets/Fonts/Menus.ttf?fileID=12800000&amp;guid=0d91d22a864a5d349bbf1545ab4812bd&amp;type=3#Menus&apos;); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/Menus.asset?fileID=11400000&amp;guid=20685227d71db294091d96d9d775b898&amp;type=2#Menus&apos;); -unity-font-style: bold; width: auto; height: auto; -unity-text-align: middle-center; align-items: center; justify-content: flex-start; align-self: center; font-size: 7%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                            </ui:Image>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="icon" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/Search.png?fileID=2800000&amp;guid=363f37ca032c68546bddca49cfb09984&amp;type=3#Search&apos;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Content" style="flex-grow: 1;" />
+    <ui:VisualElement name="Footer" style="flex-grow: 1;" />
+</ui:UXML>
