@@ -261,9 +261,9 @@
         </ui:VisualElement>
         <ui:VisualElement name="ad-campaign" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Visuals/Images/Screenshot%202024-01-04%20184641.png?fileID=2800000&amp;guid=45f4e9184f2474f4c8a41f088876d714&amp;type=3#Screenshot 2024-01-04 184641&apos;); flex-direction: row;">
             <ui:Label tabindex="-1" text="New user surprise campaign!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/ProductName.asset?fileID=11400000&amp;guid=ad8cfc927e3fec5418ade90c6d5984ec&amp;type=2#ProductName&apos;); -unity-font-style: bold; -unity-text-align: middle-center; font-size: 26px; margin-left: 28px;" />
-            <ui:VisualElement name="check-product-button" style="background-color: rgb(13, 98, 75); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/ProductName.asset?fileID=11400000&amp;guid=ad8cfc927e3fec5418ade90c6d5984ec&amp;type=2#ProductName&apos;); color: rgb(255, 255, 255);">
-                <ui:Label tabindex="-1" text="Check Products" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 19px; -unity-text-align: middle-left; margin-right: 11px;" />
-                <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Visuals/Icons/Next.png?fileID=2800000&amp;guid=5d29e593d726bd741a6608ef5ca67e8b&amp;type=3#Next&apos;); width: 32px; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement name="check-product-button">
+                <ui:Label tabindex="-1" text="Check Products" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 19px; -unity-text-align: middle-left; margin-right: 11px; color: rgb(255, 255, 255);" />
+                <ui:VisualElement picking-mode="Ignore" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/Next.png?fileID=2800000&amp;guid=5d29e593d726bd741a6608ef5ca67e8b&amp;type=3#Next&apos;); width: 32px; -unity-background-scale-mode: scale-to-fit;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

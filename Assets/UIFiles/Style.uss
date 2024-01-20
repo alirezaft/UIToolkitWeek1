@@ -132,6 +132,7 @@
 #Footer {
     flex-direction: row;
     padding-top: 37px;
+    background-color: rgb(255, 255, 255);
 }
 
 #discount-footer {
@@ -153,4 +154,27 @@
     padding-bottom: 5px;
     padding-left: 10px;
     margin-right: 66px;
+    background-color: rgb(13, 98, 75);
+}
+
+#check-product-button :hover {
+    flex-direction: row;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-right: 66px;
+    background-color: rgb(35, 136, 106);
+}
+
+.product-container :hover .product-info-name {
+    -unity-font-definition: url('project://database/Assets/FontAssets/ProductName.asset?fileID=11400000&guid=ad8cfc927e3fec5418ade90c6d5984ec&type=2#ProductName');
+    -unity-font: url('project://database/Assets/Fonts/ProductName.ttf?fileID=12800000&guid=d8d3b899cd34a2745b4c3250b6b54ebb&type=3#ProductName');
+    color: rgb(88, 129, 255);
+}
+
+.product-container :hover > .tag {
+    -unity-background-image-tint-color: rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197);
+    visibility: hidden;
 }
