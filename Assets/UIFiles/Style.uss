@@ -44,3 +44,25 @@
     left: 3px;
     top: -7px;
 }
+
+#Content {
+    height: 70%;
+}
+
+#Banner {
+    width: 20%;
+    align-items: flex-start;
+    background-image: url('project://database/Assets/Visuals/Images/12-2-1.png?fileID=2800000&guid=936223e049bbcc64d8a7db0864474a95&type=3#12-2-1');
+}
+
+#Products {
+    width: 80%;
+}
+
+.banner-text {
+}
+
+.line {
+    align-self: center;
+    height: 1px;
+}

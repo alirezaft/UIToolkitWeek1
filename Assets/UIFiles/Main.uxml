@@ -70,6 +70,16 @@
             <ui:VisualElement class="icon" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/Search.png?fileID=2800000&amp;guid=363f37ca032c68546bddca49cfb09984&amp;type=3#Search&apos;);" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="Content" style="flex-grow: 1;" />
+    <ui:VisualElement name="Content" style="flex-grow: 1; background-color: rgb(255, 255, 255); flex-direction: row;">
+        <ui:VisualElement name="Banner" style="flex-grow: 1; width: 20%; height: 100%;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Visuals/Texts/Screenshot%202024-01-04%20184738.png?fileID=2800000&amp;guid=ca4f22258656d904d9e3404be161c14d&amp;type=3#Screenshot 2024-01-04 184738&apos;); align-self: center; width: 100%; height: 60px; -unity-background-scale-mode: scale-to-fit; margin-top: 40px;" />
+            <ui:VisualElement style="flex-grow: 1; color: rgb(255, 255, 255); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/Menus.asset?fileID=11400000&amp;guid=20685227d71db294091d96d9d775b898&amp;type=2#Menus&apos;); align-self: center; width: 100%; -unity-text-align: middle-center;">
+                <ui:Label tabindex="-1" text="25 NOV - 29 NOV" parse-escape-sequences="true" display-tooltip-when-elided="true" class="banner-text" style="-unity-font-style: bold; font-size: 15px;" />
+                <ui:Label tabindex="-1" text="See More Products" parse-escape-sequences="true" display-tooltip-when-elided="true" class="banner-text" style="-unity-font-style: bold; font-size: 15px; margin-bottom: 0;" />
+                <ui:VisualElement class="line" style="background-color: rgb(255, 255, 255); width: 145px; align-self: center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Products" style="flex-grow: 1;" />
+    </ui:VisualElement>
     <ui:VisualElement name="Footer" style="flex-grow: 1;" />
 </ui:UXML>
