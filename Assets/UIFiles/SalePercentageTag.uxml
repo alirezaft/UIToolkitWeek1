@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="width: 31px; background-color: rgb(255, 155, 157); letter-spacing: 4px; justify-content: center; align-items: center; height: 19px;">
+        <ui:Label tabindex="-1" text="4%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="percentage" style="-unity-font-definition: url(&apos;project://database/Assets/FontAssets/ProductName.asset?fileID=11400000&amp;guid=ad8cfc927e3fec5418ade90c6d5984ec&amp;type=2#ProductName&apos;); color: rgb(255, 0, 0); -unity-font-style: normal; font-size: 11px; -unity-text-align: middle-center;" />
+    </ui:VisualElement>
+</ui:UXML>

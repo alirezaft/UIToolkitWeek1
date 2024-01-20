@@ -1,5 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:Template name="OptionDropdown" src="project://database/Assets/UIFiles/OptionDropdown.uxml?fileID=9197481963319205126&amp;guid=d0ef76ef1c1dfe0418e544df4f0c240a&amp;type=3#OptionDropdown" />
+    <ui:Template name="BestsellerTag" src="project://database/Assets/UIFiles/BestsellerTag.uxml?fileID=9197481963319205126&amp;guid=878d4bc7e8d39e441b801e33d5f430ec&amp;type=3#BestsellerTag" />
+    <ui:Template name="SaleTag" src="project://database/Assets/UIFiles/SaleTag.uxml?fileID=9197481963319205126&amp;guid=fe7bf1379828a9340a010ddbdf2f02e9&amp;type=3#SaleTag" />
+    <ui:Template name="SalePercentageTag" src="project://database/Assets/UIFiles/SalePercentageTag.uxml?fileID=9197481963319205126&amp;guid=5d8e4fa18e6ceb643badb9d4b7522477&amp;type=3#SalePercentageTag" />
     <Style src="project://database/Assets/UIFiles/Style.uss?fileID=7433441132597879392&amp;guid=108077bf63d09ab428300cc96e1c3045&amp;type=3#Style" />
     <ui:VisualElement name="Header" style="height: 9%;">
         <ui:VisualElement name="Dropdowns" style="flex-grow: 1;">
@@ -72,14 +75,184 @@
     </ui:VisualElement>
     <ui:VisualElement name="Content" style="flex-grow: 1; background-color: rgb(255, 255, 255); flex-direction: row;">
         <ui:VisualElement name="Banner" style="flex-grow: 1; width: 20%; height: 100%;">
-            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Visuals/Texts/Screenshot%202024-01-04%20184738.png?fileID=2800000&amp;guid=ca4f22258656d904d9e3404be161c14d&amp;type=3#Screenshot 2024-01-04 184738&apos;); align-self: center; width: 100%; height: 60px; -unity-background-scale-mode: scale-to-fit; margin-top: 40px;" />
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Visuals/Texts/Screenshot%202024-01-04%20184738.png?fileID=2800000&amp;guid=ca4f22258656d904d9e3404be161c14d&amp;type=3#Screenshot 2024-01-04 184738&apos;); align-self: center; width: 100%; height: 60px; -unity-background-scale-mode: scale-to-fit; margin-top: 40px; margin-bottom: 10px;" />
             <ui:VisualElement style="flex-grow: 1; color: rgb(255, 255, 255); -unity-font-definition: url(&apos;project://database/Assets/FontAssets/Menus.asset?fileID=11400000&amp;guid=20685227d71db294091d96d9d775b898&amp;type=2#Menus&apos;); align-self: center; width: 100%; -unity-text-align: middle-center;">
                 <ui:Label tabindex="-1" text="25 NOV - 29 NOV" parse-escape-sequences="true" display-tooltip-when-elided="true" class="banner-text" style="-unity-font-style: bold; font-size: 15px;" />
                 <ui:Label tabindex="-1" text="See More Products" parse-escape-sequences="true" display-tooltip-when-elided="true" class="banner-text" style="-unity-font-style: bold; font-size: 15px; margin-bottom: 0;" />
                 <ui:VisualElement class="line" style="background-color: rgb(255, 255, 255); width: 145px; align-self: center;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="Products" style="flex-grow: 1;" />
+        <ui:VisualElement name="Products" style="flex-grow: 1;">
+            <ui:VisualElement class="product-row" style="flex-grow: 1;">
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/h1-1-1-450x450.jpg?fileID=2800000&amp;guid=2285a055fd82b534891965442a936e37&amp;type=3#h1-1-1-450x450&apos;);">
+                        <ui:Instance template="BestsellerTag" name="BestsellerTag" class="tag" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Nike Air Max Plus" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:Label tabindex="-1" text="$59.00 - $97.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate">
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/b1-1-1-1-450x450.jpg?fileID=2800000&amp;guid=a22a73dbf6b13fa428e7ac8b12308a76&amp;type=3#b1-1-1-1-450x450&apos;);">
+                        <ui:VisualElement style="flex-grow: 1;">
+                            <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                            <ui:Instance template="SalePercentageTag" name="SalePercentageTag" class="tag" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Nike Air Max 270" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:VisualElement class="price-off-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="$230.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px; color: rgb(255, 61, 61);">
+                                    <ui:VisualElement class="line" style="width: 46px; align-self: flex-start; background-color: rgb(255, 61, 61); justify-content: space-around; top: 8px;" />
+                                </ui:Label>
+                                <ui:Label tabindex="-1" text="$220.00&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate">
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/c1-3-1-450x450.jpg?fileID=2800000&amp;guid=e6b3b50ad215a7c44b3b0f46e3af83b7&amp;type=3#c1-3-1-450x450&apos;);">
+                        <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                        <ui:Instance template="SalePercentageTag" name="SalePercentageTag" class="tag">
+                            <AttributeOverrides element-name="percentage" text="1%" />
+                        </ui:Instance>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Air Jordan 1 True Blue" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:VisualElement class="price-off-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="$190.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px; color: rgb(255, 61, 61);">
+                                    <ui:VisualElement class="line" style="width: 46px; align-self: flex-start; background-color: rgb(255, 61, 61); justify-content: space-around; top: 8px;" />
+                                </ui:Label>
+                                <ui:Label tabindex="-1" text="$189.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/a1-1-1-1-450x450.jpg?fileID=2800000&amp;guid=76d3f6c087d5fe24686a8b0e9bcb4915&amp;type=3#a1-1-1-1-450x450&apos;);">
+                        <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                        <ui:Instance template="SalePercentageTag" name="SalePercentageTag" class="tag">
+                            <AttributeOverrides element-name="percentage" text="16%" />
+                        </ui:Instance>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Nike Pegasus Turbo" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:VisualElement class="price-off-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="$890.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px; color: rgb(255, 61, 61);">
+                                    <ui:VisualElement class="line" style="width: 46px; align-self: flex-start; background-color: rgb(255, 61, 61); justify-content: space-around; top: 8px;" />
+                                </ui:Label>
+                                <ui:Label tabindex="-1" text="$760.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate">
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="product-row" style="flex-grow: 1;">
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/b1-2-1-1-450x450.jpg?fileID=2800000&amp;guid=d3cc49c17a6062742a900232d59b9e00&amp;type=3#b1-2-1-1-450x450&apos;);">
+                        <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Air Jordan" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:Label tabindex="-1" text="$99.00 - $110.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate">
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/a1-2-1-1-450x450.jpg?fileID=2800000&amp;guid=4c6761de8632b7045bcd7253cf3c487b&amp;type=3#a1-2-1-1-450x450&apos;);">
+                        <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Nike Legend Essential 3 Next Nature" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:VisualElement class="price-off-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="$150.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px; color: rgb(255, 61, 61);">
+                                    <ui:VisualElement class="line" style="width: 46px; align-self: flex-start; background-color: rgb(255, 61, 61); justify-content: space-around; top: 8px;" />
+                                </ui:Label>
+                                <ui:Label tabindex="-1" text="$130.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/c1-1-1-1-450x450.jpg?fileID=2800000&amp;guid=b32848d61cab6424dbd6d123fff154e2&amp;type=3#c1-1-1-1-450x450&apos;);">
+                        <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Nike React Miller 3" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:VisualElement class="price-off-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="$99.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px; color: rgb(255, 61, 61);">
+                                    <ui:VisualElement class="line" style="width: 39px; align-self: flex-start; background-color: rgb(255, 61, 61); justify-content: space-around; top: 8px;" />
+                                </ui:Label>
+                                <ui:Label tabindex="-1" text="$80.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="product-container" style="flex-grow: 1;">
+                    <ui:VisualElement class="product-image" style="background-image: url(&apos;project://database/Assets/Visuals/Images/e1-3-1-450x450.jpg?fileID=2800000&amp;guid=e9944e4a6ff5d054bab363029dfd9c9f&amp;type=3#e1-3-1-450x450&apos;);">
+                        <ui:Instance template="SaleTag" name="SaleTag" class="tag" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="product-info">
+                        <ui:VisualElement class="product-info-text">
+                            <ui:Label tabindex="-1" text="Nike GX Elite Dynamic" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-name" style="-unity-font-style: bold;" />
+                            <ui:VisualElement class="price-off-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="$120.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px; color: rgb(255, 61, 61);">
+                                    <ui:VisualElement class="line" style="width: 46px; align-self: flex-start; background-color: rgb(255, 61, 61); justify-content: space-around; top: 8px;" />
+                                </ui:Label>
+                                <ui:Label tabindex="-1" text="$90.00" parse-escape-sequences="true" display-tooltip-when-elided="true" class="product-info-price" style="height: 17px;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="product-info product-info-rate">
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRate.png?fileID=2800000&amp;guid=5cd256cdccebd024982bab5ce7396ad7&amp;type=3#StarRate&apos;);" />
+                            <ui:VisualElement class="product-info-rate-star" style="background-image: url(&apos;project://database/Assets/Visuals/Icons/StarRateHalf.png?fileID=2800000&amp;guid=78db52e7bc205db479843557e69c2b05&amp;type=3#StarRateHalf&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="Footer" style="flex-grow: 1;" />
 </ui:UXML>

@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="width: 45px; background-color: rgb(57, 51, 144); letter-spacing: 4px; justify-content: center; height: 19px;">
+        <ui:Label tabindex="-1" text="SALE!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-definition: url(&apos;project://database/Assets/FontAssets/Tags.asset?fileID=11400000&amp;guid=fc43c4c99abd69f4cbdfbcfef1d966a6&amp;type=2#Tags&apos;); color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 11px; -unity-text-align: middle-center;" />
+    </ui:VisualElement>
+</ui:UXML>

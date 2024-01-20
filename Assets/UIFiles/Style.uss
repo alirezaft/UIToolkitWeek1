@@ -27,8 +27,8 @@
 
 .icon {
     margin-right: 4px;
-    width: 19px;
-    height: 19px;
+    width: 25px;
+    height: 25px;
     -unity-background-scale-mode: scale-to-fit;
     align-items: flex-end;
     align-self: auto;
@@ -53,6 +53,7 @@
     width: 20%;
     align-items: flex-start;
     background-image: url('project://database/Assets/Visuals/Images/12-2-1.png?fileID=2800000&guid=936223e049bbcc64d8a7db0864474a95&type=3#12-2-1');
+    margin-right: 22px;
 }
 
 #Products {
@@ -65,4 +66,65 @@
 .line {
     align-self: center;
     height: 1px;
+}
+
+.product-row {
+    height: 50%;
+    flex-direction: row;
+}
+
+.product-container {
+    width: 25%;
+    justify-content: flex-start;
+    margin-right: 33px;
+}
+
+.product-image {
+    height: 75%;
+    flex-grow: 1;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.product-info {
+    height: 25%;
+    flex-direction: row;
+}
+
+.product-info-text {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: auto;
+    width: 50%;
+}
+
+.product-info-name {
+    -unity-font-definition: url('project://database/Assets/FontAssets/ProductName.asset?fileID=11400000&guid=ad8cfc927e3fec5418ade90c6d5984ec&type=2#ProductName');
+    -unity-font: url('project://database/Assets/Fonts/ProductName.ttf?fileID=12800000&guid=d8d3b899cd34a2745b4c3250b6b54ebb&type=3#ProductName');
+}
+
+.product-info-price {
+    -unity-font-definition: url('project://database/Assets/FontAssets/ProductName.asset?fileID=11400000&guid=ad8cfc927e3fec5418ade90c6d5984ec&type=2#ProductName');
+    -unity-font: url('project://database/Assets/Fonts/ProductName.ttf?fileID=12800000&guid=d8d3b899cd34a2745b4c3250b6b54ebb&type=3#ProductName');
+}
+
+.product-info-rate {
+    flex-direction: row;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.product-info-rate-star {
+    -unity-background-scale-mode: scale-to-fit;
+    width: 20px;
+}
+
+.price-off-container {
+    flex-direction: row;
+}
+
+.tag {
+    margin-top: 6px;
+    margin-left: 7px;
 }
